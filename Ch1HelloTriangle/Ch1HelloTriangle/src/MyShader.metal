@@ -17,7 +17,7 @@ typedef struct {
 
 // raster input, interpolate then output to fragment
 typedef struct {
-    float4 position [[position]];
+    float4 position [[position]]; // tell GPU to do rasterization using [[position]]
     float4 color;
 } RasterInput;
 
