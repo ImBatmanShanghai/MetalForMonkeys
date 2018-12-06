@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D64C05B121B98CE4006C47CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C05B021B98CE4006C47CA /* AppDelegate.swift */; };
+		D64C05B321B98CE4006C47CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C05B221B98CE4006C47CA /* ViewController.swift */; };
+		D64C05B521B98CE5006C47CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64C05B421B98CE5006C47CA /* Assets.xcassets */; };
+		D64C05B821B98CE5006C47CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64C05B621B98CE5006C47CA /* Main.storyboard */; };
+		D64C05C821B98D17006C47CA /* MyBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C05C221B98D17006C47CA /* MyBuffer.swift */; };
+		D64C05C921B98D17006C47CA /* MyRenderpass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C05C321B98D17006C47CA /* MyRenderpass.swift */; };
+		D64C05CA21B98D17006C47CA /* MyMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C05C421B98D17006C47CA /* MyMetalView.swift */; };
+		D64C05CB21B98D17006C47CA /* MyShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = D64C05C521B98D17006C47CA /* MyShader.metal */; };
+		D64C05CC21B98D17006C47CA /* MyDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C05C621B98D17006C47CA /* MyDevice.swift */; };
+		D64C05CD21B98D17006C47CA /* MyTriangleMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C05C721B98D17006C47CA /* MyTriangleMesh.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D64C05AD21B98CE4006C47CA /* Ch4IndexBuffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ch4IndexBuffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64C05B021B98CE4006C47CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D64C05B221B98CE4006C47CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D64C05B421B98CE5006C47CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D64C05B721B98CE5006C47CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D64C05B921B98CE5006C47CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64C05BA21B98CE5006C47CA /* Ch4IndexBuffer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ch4IndexBuffer.entitlements; sourceTree = "<group>"; };
+		D64C05C221B98D17006C47CA /* MyBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBuffer.swift; sourceTree = "<group>"; };
+		D64C05C321B98D17006C47CA /* MyRenderpass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRenderpass.swift; sourceTree = "<group>"; };
+		D64C05C421B98D17006C47CA /* MyMetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMetalView.swift; sourceTree = "<group>"; };
+		D64C05C521B98D17006C47CA /* MyShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MyShader.metal; sourceTree = "<group>"; };
+		D64C05C621B98D17006C47CA /* MyDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDevice.swift; sourceTree = "<group>"; };
+		D64C05C721B98D17006C47CA /* MyTriangleMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTriangleMesh.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D64C05AA21B98CE4006C47CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D64C05A421B98CE4006C47CA = {
+			isa = PBXGroup;
+			children = (
+				D64C05AF21B98CE4006C47CA /* Ch4IndexBuffer */,
+				D64C05AE21B98CE4006C47CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D64C05AE21B98CE4006C47CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D64C05AD21B98CE4006C47CA /* Ch4IndexBuffer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D64C05AF21B98CE4006C47CA /* Ch4IndexBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				D64C05C021B98D17006C47CA /* src */,
+				D64C05B021B98CE4006C47CA /* AppDelegate.swift */,
+				D64C05B221B98CE4006C47CA /* ViewController.swift */,
+				D64C05B421B98CE5006C47CA /* Assets.xcassets */,
+				D64C05B621B98CE5006C47CA /* Main.storyboard */,
+				D64C05B921B98CE5006C47CA /* Info.plist */,
+				D64C05BA21B98CE5006C47CA /* Ch4IndexBuffer.entitlements */,
+			);
+			path = Ch4IndexBuffer;
+			sourceTree = "<group>";
+		};
+		D64C05C021B98D17006C47CA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D64C05C121B98D17006C47CA /* metal */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D64C05C121B98D17006C47CA /* metal */ = {
+			isa = PBXGroup;
+			children = (
+				D64C05C221B98D17006C47CA /* MyBuffer.swift */,
+				D64C05C321B98D17006C47CA /* MyRenderpass.swift */,
+				D64C05C421B98D17006C47CA /* MyMetalView.swift */,
+				D64C05C521B98D17006C47CA /* MyShader.metal */,
+				D64C05C621B98D17006C47CA /* MyDevice.swift */,
+				D64C05C721B98D17006C47CA /* MyTriangleMesh.swift */,
+			);
+			path = metal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D64C05AC21B98CE4006C47CA /* Ch4IndexBuffer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64C05BD21B98CE5006C47CA /* Build configuration list for PBXNativeTarget "Ch4IndexBuffer" */;
+			buildPhases = (
+				D64C05A921B98CE4006C47CA /* Sources */,
+				D64C05AA21B98CE4006C47CA /* Frameworks */,
+				D64C05AB21B98CE4006C47CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ch4IndexBuffer;
+			productName = Ch4IndexBuffer;
+			productReference = D64C05AD21B98CE4006C47CA /* Ch4IndexBuffer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D64C05A521B98CE4006C47CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ImBatman;
+				TargetAttributes = {
+					D64C05AC21B98CE4006C47CA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D64C05A821B98CE4006C47CA /* Build configuration list for PBXProject "Ch4IndexBuffer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D64C05A421B98CE4006C47CA;
+			productRefGroup = D64C05AE21B98CE4006C47CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D64C05AC21B98CE4006C47CA /* Ch4IndexBuffer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D64C05AB21B98CE4006C47CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64C05B521B98CE5006C47CA /* Assets.xcassets in Resources */,
+				D64C05B821B98CE5006C47CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D64C05A921B98CE4006C47CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64C05CD21B98D17006C47CA /* MyTriangleMesh.swift in Sources */,
+				D64C05CB21B98D17006C47CA /* MyShader.metal in Sources */,
+				D64C05B321B98CE4006C47CA /* ViewController.swift in Sources */,
+				D64C05B121B98CE4006C47CA /* AppDelegate.swift in Sources */,
+				D64C05CC21B98D17006C47CA /* MyDevice.swift in Sources */,
+				D64C05CA21B98D17006C47CA /* MyMetalView.swift in Sources */,
+				D64C05C921B98D17006C47CA /* MyRenderpass.swift in Sources */,
+				D64C05C821B98D17006C47CA /* MyBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D64C05B621B98CE5006C47CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D64C05B721B98CE5006C47CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D64C05BB21B98CE5006C47CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D64C05BC21B98CE5006C47CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D64C05BE21B98CE5006C47CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ch4IndexBuffer/Ch4IndexBuffer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ch4IndexBuffer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.imBatamn.test.Ch4IndexBuffer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		D64C05BF21B98CE5006C47CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ch4IndexBuffer/Ch4IndexBuffer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ch4IndexBuffer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.imBatamn.test.Ch4IndexBuffer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D64C05A821B98CE4006C47CA /* Build configuration list for PBXProject "Ch4IndexBuffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64C05BB21B98CE5006C47CA /* Debug */,
+				D64C05BC21B98CE5006C47CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64C05BD21B98CE5006C47CA /* Build configuration list for PBXNativeTarget "Ch4IndexBuffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64C05BE21B98CE5006C47CA /* Debug */,
+				D64C05BF21B98CE5006C47CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D64C05A521B98CE4006C47CA /* Project object */;
+}
